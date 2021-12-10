@@ -5,27 +5,35 @@
 <div>
     {{ count }}
 </div>
-<!-- <div
-      v-for="item in list">
-      {{ item.contactperson }}
-      {{ item.name}}
-    
-    </div> -->
-      <item-supplier
+
+
+  <table>
+  <tr>
+    <th>Company</th>
+    <th>Contact</th>
+    <th>Adress</th>
+    <th>Zipcode</th>
+    <th>Place</th>
+    <th>Phonenumber</th>
+  </tr>
+  
+      <supplier-item
       v-for="item in list"
-          :item="item">
-      </item-supplier>
+          :item="item"
+          :key="item.id">
+      </supplier-item>
+      </table>
 </div>
 
 </template>
 
 
 <script>
-import itemSupplier from "./itemSupplier.vue";
+import supplierItem from "./supplierItem.vue";
 
 export default {
     components: {
-        itemSupplier,
+        supplierItem,
     },
     props: {
         msg: String,

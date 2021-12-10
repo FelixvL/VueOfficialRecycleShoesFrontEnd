@@ -1,13 +1,4 @@
 <template>
-    <table>
-  <tr>
-    <th>Company</th>
-    <th>Contact</th>
-    <th>Adress</th>
-    <th>Zipcode</th>
-    <th>Place</th>
-    <th>Phonenumber</th>
-  </tr>
   <tr>
     <td>{{ item.name }}</td>
     <td>{{ item.contactperson }}</td>
@@ -16,7 +7,7 @@
     <td>{{ item.place }}</td>
     <td>{{ item.phonenumber }}</td>
   </tr>
-</table>
+
 
 </template>
 
