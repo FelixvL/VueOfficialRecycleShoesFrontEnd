@@ -2,11 +2,6 @@
 
 <div>
     <h1> recycle-shoes app</h1>
-<div>
-    {{ count }}
-</div>
-
-
   <table>
   <tr>
     <th>Company</th>
@@ -40,7 +35,6 @@ export default {
     },
     data() {
         return {
-            // count: 0,
             list: [],
         };
     },

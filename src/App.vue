@@ -2,11 +2,15 @@
 // This starter template is using Vue 3 <script setup> SFCs
 // Check out https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup
 import supplierList from './components/supplierList.vue'
+import supplierForm from './components/supplierForm.vue'
 </script>
 
 <template>
   <!-- <img alt="Vue logo" src="./assets/logo.png" /> -->
-  <supplierList msg="Hello Vue 3 + Vite" />
+  <div>
+    <supplierForm msg="Hello Vue 3 + Vite" />
+    <supplierList msg="Hello Vue 3 + Vite" />
+  </div>
 </template>
 
 <style>
