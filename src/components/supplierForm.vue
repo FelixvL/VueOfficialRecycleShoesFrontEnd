@@ -30,21 +30,15 @@ export default {
     },
 
     async addItem() {
+      console.log(this.yoyo.companyName);
       await fetch("http://localhost:5000/suppliertoevoegen", {
         method: "POST",
         headers: {
           "content-type": "application/json",
         },
-        body: {
-          name: "joost",
-          email: "joost",
-          address: "joost",
-          zipcode: "joost",
-          place: "joost",
-          contactperson: "joost",
-          phonenumber: "joost",
-          delivery: "0",
-        },
+        body: JSON.stringify({
+          name : this.yoyo.companyName
+        }),
       });
     },
   },

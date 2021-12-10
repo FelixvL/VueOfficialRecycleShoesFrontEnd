@@ -3,6 +3,7 @@
 // Check out https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup
 import supplierList from './components/supplierList.vue'
 import supplierForm from './components/supplierForm.vue'
+import FfProberen from './components/felix/FfProberen.vue'
 </script>
 
 <template>
@@ -10,6 +11,7 @@ import supplierForm from './components/supplierForm.vue'
   <div>
     <supplierForm msg="Hello Vue 3 + Vite" />
     <supplierList msg="Hello Vue 3 + Vite" />
+    <FfProberen/>
   </div>
 </template>
 
