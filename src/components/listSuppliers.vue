@@ -13,7 +13,8 @@
     </div> -->
       <item-supplier
       v-for="item in list"
-          :item="item">
+        :key="item.id"
+        :item="item">
       </item-supplier>
 </div>
 
