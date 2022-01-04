@@ -9,8 +9,10 @@ import FfProberen from './components/felix/FfProberen.vue'
 <template>
   <!-- <img alt="Vue logo" src="./assets/logo.png" /> -->
   <div>
+<!--
     <supplierForm msg="Hello Vue 3 + Vite" />
     <supplierList msg="Hello Vue 3 + Vite" />
+-->
     <FfProberen/>
   </div>
 </template>
