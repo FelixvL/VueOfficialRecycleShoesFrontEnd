@@ -4,31 +4,29 @@
     <!-- <h1> recycle-shoes app</h1> -->
   <table>
   <tr>
-    <th>Company</th>
-    <th>Contact</th>
-    <th>Adress</th>
-    <th>Zipcode</th>
-    <th>Place</th>
-    <th>Phonenumber</th>
+    <th>product</th>
+    <th>datedelivery</th>
+    <th>administrator</th>
   </tr>
   
-      <supplier-item
+     <delivery-item
       v-for="item in list"
           :item="item"
           :key="item.id">
-      </supplier-item>
+      </delivery-item>
       </table>
+
 </div>
 
 </template>
 
 
 <script>
-import supplierItem from "./supplierItem.vue";
+import deliveryItem from "./deliveryItem.vue";
 
 export default {
     components: {
-        supplierItem,
+        deliveryItem,
     },
     props: {
         msg: String,
@@ -45,7 +43,7 @@ export default {
     },
     methods: {
         async getAllSuppliers() {
-            const resp = await fetch("http://localhost:5000/getallsuppliersdb")
+            const resp = await fetch("http://localhost:5000/getalldeliveriessdb")
             this.list = await resp.json();
         },
     },
